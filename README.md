@@ -9,20 +9,18 @@ That said, feel free to clone the repo's and have a play.
 
 This project is my first journey into Python, AI, electronics and robotics, so feedback is very much welcomed!
 
-
-
 ---
 
 ## 🧠 Project Overview
 
 Bop is designed as a multi-device system where each Pi (or machine) is responsible for a specific role:
 
-| Component    | Responsibility                                   |
-|--------------|--------------------------------------------------|
-| `bop_sense`  | Handles input: microphone, camera, etc.          |
-| `bop_brain`  | Processes input and routes commands intelligently |
-| `bop_body`   | Handles output: screen display, motor control, etc. |
-| `bop_common` | Shared DTOs, constants, and communication layers  |
+| Component    | Responsibility                                   | Link |
+|--------------|--------------------------------------------------|------
+| `bop_sense`  | Handles input: microphone, camera, etc.          |[bop_sense](https://github.com/shane-chris-barker/bop_sense) |
+| `bop_brain`  | Processes input and routes commands intelligently | [bop_brain](https://github.com/shane-chris-barker/bop_brain) |
+| `bop_body`   | Handles output: screen display, motor control, etc. | [bop_body](https://github.com/shane-chris-barker/bop_body) |
+| `bop_common` | Shared DTOs, constants, and communication layers  | [bop_common](https://github.com/shane-chris-barker/bop_common) |
 
 Communication between these components happens via MQTT or AMQP, with support for both real and mocked message brokers for testing.
 
@@ -31,6 +29,8 @@ and is a fun side project of mine.
 
 The Pi running the bop_brain codebase should be a min of 8GB, as there is some planned ONNX inference planned. This is also
 where the bulk of the work is carried out.
+
+![Bop Flow Diagram](images/diagrams/bop_flow.png)
 
 ---
 

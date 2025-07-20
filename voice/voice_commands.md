@@ -88,7 +88,7 @@ In order to generate a weather report:
 
 This should result in Bop gaining a weather report from [OpenMeteo](https://open-meteo.com/) and displaying it on the HDMI screen attached to `bop_body`
 
-![Alt text](../images/voice/weather_report.png)
+![Weather Report Example](../images/voice/weather_report.png)
 
 The report is very basic now and will be improved in the future.
 
